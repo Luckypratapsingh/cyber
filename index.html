@@ -1,0 +1,479 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cyber Shield - Cyber Security</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#07111f;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    background:#020914;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 0 15px #00eaff;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:bold;
+    color:#00eaff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00eaff;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+    background:
+    radial-gradient(circle at center,#123c50 0%,#07111f 45%,#020914 100%);
+}
+
+.hero-content h1{
+    font-size:60px;
+    color:#00eaff;
+    margin-bottom:20px;
+    text-shadow:0 0 20px #00eaff;
+}
+
+.hero-content h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    background:#00eaff;
+    color:#001018;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    box-shadow:0 0 20px #00eaff;
+}
+
+/* COMMON */
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    color:#00eaff;
+    margin-bottom:45px;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+/* SERVICES */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#0c1b2d;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #17445b;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00eaff;
+    box-shadow:0 0 20px #00eaff55;
+}
+
+.card .icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#00eaff;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#b9c6d5;
+    line-height:1.6;
+}
+
+/* TIPS */
+.tips{
+    max-width:900px;
+    margin:auto;
+}
+
+.tip{
+    background:#0c1b2d;
+    padding:20px;
+    margin:15px 0;
+    border-left:5px solid #00eaff;
+    border-radius:8px;
+}
+
+.tip span{
+    color:#00eaff;
+    font-weight:bold;
+}
+
+/* CONTACT */
+.contact{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#10253a;
+    color:white;
+}
+
+.contact textarea{
+    height:130px;
+    resize:none;
+}
+
+.contact button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#00eaff;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.contact button:hover{
+    background:white;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020914;
+    color:#9fb0c2;
+}
+
+footer b{
+    color:#00eaff;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content h2{
+        font-size:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">🛡️ Cyber Shield</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tips">Safety Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>CYBER SECURITY</h1>
+
+        <h2>Protect Your Digital World 🔐</h2>
+
+        <p>
+            Stay safe from hackers, phishing, malware and online fraud.
+            Learn how to protect your personal information and digital devices.
+        </p>
+
+        <a href="#services" class="btn">Explore Security</a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="title">About Cyber Security</h2>
+
+    <div class="about">
+
+        <p>
+            Cyber Security is the practice of protecting computers,
+            mobile phones, networks, applications and personal information
+            from cyber attacks and unauthorized access.
+        </p>
+
+        <br>
+
+        <p>
+            Strong passwords, two-factor authentication, secure browsing
+            and regular software updates can help protect your digital life.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+    <h2 class="title">Cyber Security Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🔐</div>
+            <h3>Password Security</h3>
+            <p>
+                Learn how to create strong and secure passwords
+                for your online accounts.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🦠</div>
+            <h3>Malware Protection</h3>
+            <p>
+                Protect your computer and mobile devices from
+                harmful software and viruses.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🎣</div>
+            <h3>Phishing Protection</h3>
+            <p>
+                Identify fake emails, messages and websites
+                designed to steal your information.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Safe Browsing</h3>
+            <p>
+                Browse the internet safely and avoid suspicious
+                websites and unsafe downloads.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>Mobile Security</h3>
+            <p>
+                Keep your smartphone protected from malicious
+                applications and unauthorized access.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">☁️</div>
+            <h3>Data Protection</h3>
+            <p>
+                Protect important personal and business data
+                with proper security practices.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SAFETY TIPS -->
+<section id="tips">
+
+    <h2 class="title">Cyber Safety Tips</h2>
+
+    <div class="tips">
+
+        <div class="tip">
+            <span>01.</span>
+            Use a strong and unique password for every important account.
+        </div>
+
+        <div class="tip">
+            <span>02.</span>
+            Never share your OTP, PIN or password with anyone.
+        </div>
+
+        <div class="tip">
+            <span>03.</span>
+            Do not click suspicious links received through unknown messages.
+        </div>
+
+        <div class="tip">
+            <span>04.</span>
+            Enable Two-Factor Authentication whenever possible.
+        </div>
+
+        <div class="tip">
+            <span>05.</span>
+            Keep your operating system and applications updated.
+        </div>
+
+        <div class="tip">
+            <span>06.</span>
+            Avoid downloading files from unknown or untrusted websites.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact">
+
+        <input type="text" placeholder="Enter Your Name">
+
+        <input type="email" placeholder="Enter Your Email">
+
+        <input type="text" placeholder="Enter Your Subject">
+
+        <textarea placeholder="Write Your Message"></textarea>
+
+        <button onclick="sendMessage()">Send Message</button>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 <b>Cyber Shield</b> | Cyber Security Awareness Website
+    </p>
+
+</footer>
+
+
+<script>
+
+function sendMessage(){
+
+    alert("Thank you! Your message has been submitted.");
+
+}
+
+</script>
+
+</body>
+</html>
+```
